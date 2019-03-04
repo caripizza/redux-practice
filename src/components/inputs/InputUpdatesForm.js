@@ -18,8 +18,8 @@ const InputForm = ({ input1, input2, onChange }) => {
 };
 
 InputForm.propTypes = {
-  input1: PropTypes.string.isRequired,
-  input2: PropTypes.string.isRequired,
+  input1: PropTypes.string,
+  input2: PropTypes.string,
   onChange: PropTypes.func.isRequired
 };
 

@@ -2,10 +2,11 @@ import {
   UPDATE_INPUT1,
   UPDATE_INPUT2
 } from '../actions/inputs';
+import { NOTE_CREATE } from '../actions/notes';
 
 const initialState = {
-  input1: 'default 1',
-  input2: 'default 2'
+  input1: '',
+  input2: ''
 };
 
 export default function reducer(
@@ -23,6 +24,8 @@ export default function reducer(
         ...state,
         input2: payload
       };
+    case NOTE_CREATE:
+      return initialState;
     default:
       return state;
   }
