@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Inputs from '../../components/inputs/Inputs';
+import InputsDisplay from '../../components/inputs/InputsDisplay';
 import { getInput1, getInput2 } from '../../selectors/inputs';
 
 // map redux state to component props
@@ -15,4 +15,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   // mapDispatchToProps
-)(Inputs);
+)(InputsDisplay);

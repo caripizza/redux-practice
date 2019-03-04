@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import InputForm from '../../components/inputs/InputForm';
+import InputUpdatesForm from '../../components/inputs/InputUpdatesForm';
 import { getInput1, getInput2 } from '../../selectors/inputs';
 import { updateInput1, updateInput2 } from '../../actions/inputs';
 
@@ -37,4 +37,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(InputForm);
+)(InputUpdatesForm);
