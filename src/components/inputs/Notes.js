@@ -5,12 +5,12 @@ import InputsDisplay from './InputsDisplay';
 const Notes = ({ notes }) => {
   const listOfNotes = notes.map((note, i) => {
     return (
-      <li key={i}>
+      <div key={i}>
         <InputsDisplay 
           input1={note.input1}
           input2={note.input2}
         />
-      </li>
+      </div>
     );
   });
 

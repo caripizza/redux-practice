@@ -4,8 +4,12 @@ import PropTypes from 'prop-types';
 const InputsDisplay = ({ input1, input2 }) => {
   return (
     <>
-      <h2>{input1}</h2>
-      <h2>{input2}</h2>
+      <li>
+        <h3>{input1}</h3>
+      </li>
+      <li>
+        <h3>{input2}</h3>
+      </li>
     </>
   );
 };

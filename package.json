@@ -11,12 +11,6 @@
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
     "build": "webpack -p"
   },
-  "snapshotSerializers": [
-    "enzyme-to-json/serializer"
-  ],
-  "setupFilesAfterEnv": [
-    "<rootDir>src/setupTests.js"
-  ],
   "jest": {
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy",
@@ -39,6 +33,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "shortid": "^2.2.14"
   },
