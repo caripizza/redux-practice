@@ -1,4 +1,4 @@
-export const UPDATE_INPUT1 = 'INPUT1';
+export const UPDATE_INPUT1 = 'UPDATE_INPUT1';
 export const updateInput1 = input1 => ({
   type: UPDATE_INPUT1,
   payload: input1

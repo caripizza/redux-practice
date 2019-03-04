@@ -5,10 +5,12 @@ const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
-    filename: 'bundle.[hash].js'
+    filename: 'bundle.[hash].js',
+    publicPath: '/'
   },
   devServer: {
-    port: 7891
+    port: 7891,
+    historyApiFallback: true
   },
   performance: {
     maxEntrypointSize: 512000,
